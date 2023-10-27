@@ -1,9 +1,24 @@
-/* search-box.component.scss */
+@import 'src/app/sass/main';
+
 input {
-  width: 16rem; /* 192px / 16px = 12rem */
-  padding: 0.625rem; /* 10px / 16px = 0.625rem */
-  border: 1px solid #ccc;
-  border-radius: 0.3125rem; /* 5px / 16px = 0.3125rem */
-  font-size: 1rem; /* 16px / 16px = 1rem */
-  /* Agrega estilos adicionales en rem según tus preferencias */
+  width: 16rem;
+  padding: 0.6rem 2rem;
+  border: 1px solid map-get($f--colors, input, border, no-hover );
+  border-radius: 0.3125rem;
+  font-size: 1rem;
+}
+
+.container_search_input {
+  position: relative;
+}
+
+.button_clear {
+  font-size: 2rem;
+  position: absolute;
+  top: 0%;
+  right: 2%;
+  background: transparent;
+  border: none;
+  opacity: 0.5;
+  cursor: pointer;
 }

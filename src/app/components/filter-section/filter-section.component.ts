@@ -1,4 +1,3 @@
-// filter-section.component.ts
 import { Component, ElementRef, EventEmitter, HostListener, Input, OnInit, Output, ViewChild } from '@angular/core';
 import { OptionsFormatSelected, OptionsSelect } from 'src/app/types/common';
 
@@ -27,7 +26,11 @@ export class FilterSectionComponent implements OnInit {
   selectLength: number = 0;
 
   ngOnInit(): void {
-    this.optionsFormat = this.options.map((item)=> ({...item, isSelected: false}))
+    this.formatData();
+  }
+
+  formatData(){
+    this.optionsFormat = this.options.map((item)=> ({...item, isSelected: false}));
   }
 
   onChange(){
@@ -54,5 +57,12 @@ export class FilterSectionComponent implements OnInit {
 
   handleClickOutside() {
     this.isShowSection = false;
+  }
+
+  clearAllSelectGenre(){
+    this.formatData();
+    this.selectLength = 0;
+    this.isShowSection = false;
+    this.$change.emit([]);
   }
 }

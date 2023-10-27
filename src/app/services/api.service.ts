@@ -24,5 +24,4 @@ export class ApiService {
         });
     });
   }
-  // ... demas metodos PUT DELETE POST
 }

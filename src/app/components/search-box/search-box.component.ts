@@ -13,5 +13,9 @@ export class SearchBoxComponent {
   onChange() {
     this.$change.emit(this.searchTerm);
   }
+  cleanText(){
+    this.searchTerm = '';
+    this.$change.emit('');
+  }
 }
 

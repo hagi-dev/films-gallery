@@ -1,0 +1,86 @@
+$f--colors: (
+  app: (
+    bg-body: white,
+  ),
+  button: (
+    bg:(
+      hover: #004289,
+      no-hover: #007bff,
+      disabled: rgba(0, 123, 255, 0.7),
+      reveverse: #fff
+    ),
+    text:(
+      no-hover: white,
+      disabled: rgba(255, 255, 255, 0.7),
+      reveverse: #007bff
+    ),
+    border: (
+      no-hover: #007bff,
+      hover: none
+    )
+  ),
+  input: (
+    bg:(
+      no-hover: #fff,
+    ),
+    text:(
+      no-hover: #000,
+      disabled: rgba(255, 255, 255, 0.7),
+    ),
+    border: (
+      no-hover: #ccc,
+      hover: none
+    ),
+    checkbox: (
+      selected: #920303,
+      bg: (
+        no-hover: #ccc
+      )
+    )
+  ) ,
+  tag:(
+    bg:(
+      hover: #39a9c0,
+      no-hover: #46d1ed,
+      disabled: rgba(70, 209, 237, 0.7)
+    ),
+    text:(
+      no-hover: white,
+      disabled: rgba(255, 255, 255, 0.7)
+    )
+  ),
+  card:(
+    detail:(
+      bg:(
+        no-hover: #f9f9f9,
+      ),
+      border: (
+        normal: #ddd
+      ),
+      shadow: 0 0 10px rgba(0, 0, 0, 0.1),
+      text:(
+        no-hover: white,
+        disabled: rgba(255, 255, 255, 0.7),
+        title: #333,
+        detail: #666
+      )
+    ),
+    list: (
+      bg: (
+        no-hover: #fff
+      ),
+      shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+      text:(
+        no-hover: white,
+        disabled: rgba(255, 255, 255, 0.7),
+        title: #000
+      )
+    ),
+  ),
+  filters: (
+      bg: (
+        no-hover: rgba(255, 255, 255, 0.4)
+      ),
+    )
+
+)

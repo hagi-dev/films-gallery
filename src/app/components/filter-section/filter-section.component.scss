@@ -1,3 +1,5 @@
+@import 'src/app/sass/main';
+
 .container_filter {
   border-radius: 6px;
   .button_filter {
@@ -5,8 +7,17 @@
     font-size: 1rem;
     min-width: 120px;
     padding: 10px 10px;
-    background: antiquewhite;
+    background: map-get($f--colors, button, bg, no-hover );
+    border-radius: map-get($f--border-radius, button, total );
+    color: map-get($f--colors, button, text, no-hover);
     cursor: pointer;
+  }
+  .button_filter.reverse{
+    background: map-get($f--colors, button, bg, reveverse );
+    color: map-get($f--colors, button, text, reveverse );
+    &:hover{
+      opacity: 0.7;
+    }
   }
 }
 
@@ -44,10 +55,19 @@ label {
   .object_select {
     width: 15px;
     height: 15px;
-    background-color: #ccc;
+    background-color: map-get($f--colors, input, checkbox, bg, no-hover );
     margin-right: 10px;
     &.active {
-      background-color: #007bff !important;
+      background-color: map-get($f--colors, input, checkbox, selected ) !important;
     }
   }
+}
+
+.fas{
+  margin-left: 0.5rem
+}
+
+.container_select_button{
+  display: flex;
+  gap: 5px;
 }

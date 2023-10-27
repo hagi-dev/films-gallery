@@ -1,7 +1,9 @@
+@import 'src/app/sass/main';
+
 .container_card{
-  background-color: white;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 15px;
+  background-color: map-get($f--colors, card, list, bg, no-hover );
+  box-shadow: map-get($f--colors, card, list, shadow);
+  border-radius: map-get($f--border-radius, card, list, total);
   .container_image{
     overflow: hidden;
     height: 220px;
@@ -25,8 +27,8 @@
       overflow: hidden;
     }
     .body_genre{
-      background-color: #007bff;
-      color: white;
+      background-color: map-get($f--colors, tag, bg, no-hover);
+      color: map-get($f--colors, tag, text, no-hover);
       padding: 5px 10px;
       text-align: right;
       font-size: 0.87rem;

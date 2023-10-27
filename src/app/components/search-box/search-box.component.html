@@ -1,2 +1,5 @@
-<!-- search-box.component.html -->
-<input type="text" placeholder="Buscar..." [(ngModel)]="searchTerm" (ngModelChange)="onChange()">
+<div class="container_search_input">
+  <input type="text" placeholder="Search by title or description..." [(ngModel)]="searchTerm" (ngModelChange)="onChange()">
+  <button *ngIf="searchTerm" class="button_clear" (click)="cleanText()"><i class="fas fa-xmark-large"></i>x</button>
+</div>
+

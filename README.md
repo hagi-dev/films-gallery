@@ -1,27 +1,79 @@
-# FilmsGallery
+# Films Web App
+Welcome to the Films Web App documentation. This guide provides an overview of how to set up, run, and use the Films Web App.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.2.
+## Desarrollador: <a href="https://github.com/hagi-dev">Hagi Torres Macedo</a> 
+<section style="text-align: center;">
+ <a 
+      href="https://www.linkedin.com/in/hagitorres/" 
+      target="_blank">
+      <img src="https://img.shields.io/badge/LinkedIn-0077b5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Linkedin">
+  </a>
+  <a 
+     href = "hagiraitorresmacedo@gmail.com" 
+     target="_blank">
+     <img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail">
+ </a>
+</section>
 
-## Development server
+</p>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Table of Contents
 
-## Code scaffolding
+1. [Getting Started](#1-getting-started)
+2. [Problem](#Problem)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 1. Getting Started
 
-## Build
+### Installation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+To get started with the Films Web App, follow these steps:
 
-## Running unit tests
+1. Clone the repository:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+   ```bash
+   git clone [https://github.com/hagi-dev/films-gallery]
+   cd films-gallery
 
-## Running end-to-end tests
+## Running the app
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash
+## Inplementation
+1. yarn install
 
-## Further help
+## Running JSON -SERVER
+2. yarn json-server --watch src/data/db.json
+## The API will be available at http://localhost:3000.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Running App Angular
+3. ng serve
+## The app will be available at http://localhost:4200.
+```
+
+<hr/><br/>
+
+## Problem
+
+You have been tasked with developing a web application that connects to and consumes data from a JSON file (an example of this JSON is included in the appendix of this document). The file provides information about movies: Name, description, and their genre classification. Your goal is to create a user interface that displays a list of movies and allows for the following operations:"
+
+<ol>
+  <li>Filter movies by name</li>
+  <li>Filter movies by description</li>
+  <li>Filter movies by genre</li>  
+</ol>
+
+
+## Tech Stack
+
+<ol>
+  <li>Angular 16 </li>   
+</ol>
+
+
+## Support
+
+- Author - [Hagi Torres Macedo](https://www.linkedin.com/in/hagitorres/)
+- Contact - [hagiraitorresmacedo@gmail.com](mailto:hagiraitorresmacedo@gmail.com)
+
+## License
+
+Nest is [MIT licensed](LICENSE).
