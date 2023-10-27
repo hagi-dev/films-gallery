@@ -1,0 +1,18 @@
+<div>
+  <div class="filters">
+    <filter-section ($change)="onChangeFilter($event)"></filter-section>
+    <search-box ($change)="onChangeSearchText($event)"></search-box>
+  </div>
+</div>
+<div class="body_page">
+  <ng-container *ngFor="let film of filmsList | filterByName:searchText | filterByGender:selectGenres">
+    <card-films
+      [title]="film.title"
+      [tag]="film.genre"
+      [urlImage]="film.image"
+      [id]="film.id"
+      ($click)="onClickCard($event)"
+    ></card-films>
+  </ng-container>
+</div>
+

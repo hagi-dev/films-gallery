@@ -1,0 +1,44 @@
+//== General Mode
+.f-page--overflow {
+  overflow-x: hidden;
+}
+
+.f-page {
+  min-height: 100vh;
+  // hide page when page loading is enabled
+  .f-page--loading & {
+    display: none !important;
+  }
+}
+
+//== Desktop Mode
+@include desktop {
+  .f-page {
+    // page container
+    .f-page__container {
+      position: relative;
+      // wide layout mode
+      padding: 0 array-get($f-config-base, page, container, padding, wide, x, desktop);
+
+      // fluid layout mode
+      .f-page--fluid & {
+        padding: 0 array-get($f-config-base, page, container, padding, fluid, x, desktop);
+      }
+    }
+  }
+}
+
+//== Desktop Mode
+@include tablet-and-mobile {
+  .f-page {
+    // page container
+    .f-page__container {
+      position: relative;
+      padding: 0 array-get($f-config-base, page, container, padding, wide, x, mobile);
+
+      .f-page--fluid & {
+        padding: 0 array-get($f-config-base, page, container, padding, fluid, x, mobile);
+      }
+    }
+  }
+}

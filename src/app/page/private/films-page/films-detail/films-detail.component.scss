@@ -1,0 +1,76 @@
+// Estilos generales
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  margin: 20px;
+  &:hover {
+    background-color: #0056b3;
+  }
+}
+
+.container_body {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.image {
+  flex: 1;
+  max-width: 30%;
+  img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 10px;
+  }
+}
+
+.body {
+  flex: 1;
+  max-width: 50%;
+  padding: 20px;
+  h2 {
+    font-size: 24px;
+    margin: 0;
+    color: #333;
+  }
+  h4 {
+    font-size: 18px;
+    margin: 0;
+    color: #666;
+  }
+}
+
+.body_genre{
+  background-color: #007bff;
+  color: white !important;
+  padding: 5px 10px;
+  text-align: right;
+  font-size: 0.87rem;
+  width: fit-content;
+  border-radius: 10px;
+  margin: 10px 0 !important;
+}
+
+@media (max-width: 768px) {
+  .container_body {
+    flex-direction: column;
+
+  }
+  .image, .body {
+    max-width: 100%;
+  }
+}

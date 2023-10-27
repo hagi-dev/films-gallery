@@ -1,0 +1,17 @@
+<section class="container_filter" #container_select>
+  <button class="button_filter" (click)="onShowSection()">Genres: {{ selectLength ? selectLength +' selected' : '' }}</button>
+  <div class="container_select {{ isShowSection ? 'active' : 'hidden' }}">
+    <div class="checkbox-list">
+      <label *ngFor="let option of optionsFormat">
+        <div class="object_select {{ option.isSelected ? 'active': '' }}"></div>
+        <input
+          type="checkbox"
+          [(ngModel)]="option.isSelected"
+          [value]="option.value"
+          (ngModelChange)="onChange()"
+        />
+        {{ option.label }}
+      </label>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,31 @@
+.body_page {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 160px));
+  gap: 15px; /* Espacio entre las tarjetas */
+  justify-content: center; /* Centra las tarjetas en el contenedor */
+  margin: 30px 0;
+  margin-top: 80px;
+}
+.filters {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.4);
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 5px;
+  top: 0;
+  padding: 10px 41px;
+  flex-wrap: wrap;
+  position: fixed;
+  backdrop-filter: blur(10px);
+}
+
+@media screen and (max-width: 550px) {
+  .filters{
+    flex-direction: column-reverse;
+  }
+
+  .body_page{
+    gap: 10px;
+    margin-top: 120px;
+  }
+}

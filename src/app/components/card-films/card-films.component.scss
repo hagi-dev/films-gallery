@@ -1,0 +1,37 @@
+.container_card{
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  .container_image{
+    overflow: hidden;
+    height: 220px;
+    img{
+      width: 100%;
+      height: auto;
+      border-top-right-radius: 15px;
+      border-top-left-radius: 15px;
+    }
+  }
+  .container_body{
+    padding: 2px 10px;
+    .body_title{
+      width: 100%;
+      font-size: 1rem;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      line-clamp: 1;
+      max-height: calc(1.2em * 1);
+      overflow: hidden;
+    }
+    .body_genre{
+      background-color: #007bff;
+      color: white;
+      padding: 5px 10px;
+      text-align: right;
+      font-size: 0.87rem;
+      width: fit-content;
+      border-radius: 10px;
+    }
+  }
+}

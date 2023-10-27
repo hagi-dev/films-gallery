@@ -1,0 +1,12 @@
+/* header.component.scss */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff; /* Cambia el color de fondo según tus preferencias */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agrega sombra si es necesario */
+  z-index: 1000; /* Asegura que el encabezado esté por encima de otros elementos */
+}
+
+/* Agrega más estilos para el contenido del encabezado si es necesario */
